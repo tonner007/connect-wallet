@@ -1,0 +1,30 @@
+{
+  "name": "connect-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.68.0",
+    "connectkit": "^1.9.1",
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "viem": "^2.26.0",
+    "wagmi": "^2.14.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.33",
+    "patch-package": "^8.0.0",
+    "typescript": "^5.8.2"
+  }
+}

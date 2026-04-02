@@ -1,0 +1,16 @@
+diff --git a/node_modules/connectkit/build/index.es.js b/node_modules/connectkit/build/index.es.js
+index 6f4a8ef..9db91d4 100644
+--- a/node_modules/connectkit/build/index.es.js
++++ b/node_modules/connectkit/build/index.es.js
+@@ -251,8 +251,9 @@ const truncateENSAddress = (ensName, maxLength) => {
+     }
+ };
+ const nFormatter = (num, digits = 2) => {
+-    if (num < 10000)
+-        return num.toFixed(2);
++    if (num < 10000) {
++        return num.toFixed(5);
++    }
+     const lookup = [
+         { value: 1, symbol: '' },
+         { value: 1e3, symbol: 'k' },
